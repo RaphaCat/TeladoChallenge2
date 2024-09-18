@@ -51,6 +51,8 @@
 }
 
 .column {
+    background-color: #fff; /* Fundo branco para maior contraste */
+    color: #333; /* Cor do texto para maior legibilidade */
     flex: 1;
     padding: 20px;
     border: 1px solid #cccccc;
@@ -67,12 +69,19 @@
 .column p {
     font-weight: bold;
     margin-bottom: 8px;
-
 }
 
 /* Estilizando o restante do texto nas colunas */
 .column ul {
-    margin-bottom: 10px; /* Espaço abaixo dos parágrafos */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaço abaixo dos itens da lista */
+    padding-left: 20px; /* Recuo à esquerda para lista */
+    list-style-type: disc; /* Adiciona marcadores às listas */
+}
+
+.column li {
+    font-weight: bold;
+    margin-bottom: 8px; /* Espaço abaixo de cada item */
 }
 
 /* Quebrar as colunas em telas menores */
